@@ -13,7 +13,7 @@ import java.util.List;
 public class Tour {
     @Id
     @Column(name = "id")
-    private String id;
+    private int id;
     @Column(name = "name")
     private String name;
     @Column(name = "type")
@@ -53,11 +53,11 @@ public class Tour {
         this.totalTickets = totalTickets;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
